@@ -46,4 +46,4 @@ for filename in os.listdir('./ticket'):
         except discord.Forbidden:
             print(colored(f'Error, something went wrong with {filename}!', 'red'))
 
-bot.run('OTE2ODU0NzcwNjk2ODU5NjY5.YawNiw.cbhMgyTVp83P_JiQZoi2xb0iWoQ')
+bot.run('your token')
