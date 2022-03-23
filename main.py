@@ -36,14 +36,4 @@ async def social_score(ctx):
     embed.set_author(name=f'{ctx.author.name}', icon_url=ctx.author.avatar_url)
     await ctx.send(embed=embed)
 
-
-print(colored('Ticket Part get Loaded', 'green'))
-for filename in os.listdir('./ticket'):
-    if filename.endswith('.py'):
-        try:
-            bot.load_extension(f'ticket.{filename[:-3]}')
-            print(f'Loaded ' + colored(f'{filename} ', 'green') + f'Successful')
-        except discord.Forbidden:
-            print(colored(f'Error, something went wrong with {filename}!', 'red'))
-
 bot.run('your token')
