@@ -28,8 +28,7 @@ async def social_score(ctx):
     social_score_memes = data['social_score']
     meme = random.choice(social_score_memes)
 
-    embed = discord.Embed(title=' ',
-                          description=f'{ctx.author.mention} has got a social score!')
+    embed = discord.Embed(description=f'{ctx.author.mention} has got a social score!')
     embed.set_image(url=meme)
     embed.set_author(name=f'{ctx.author.name}', icon_url=ctx.author.avatar_url)
     await ctx.send(embed=embed)
