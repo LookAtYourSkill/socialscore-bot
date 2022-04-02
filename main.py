@@ -1,4 +1,3 @@
-import datetime
 import json
 import os
 import random
@@ -30,8 +29,7 @@ async def social_score(ctx):
     meme = random.choice(social_score_memes)
 
     embed = discord.Embed(title=' ',
-                          description=f'{ctx.author.mention} has got a social score!',
-                          timestamp=datetime.datetime.utcnow())
+                          description=f'{ctx.author.mention} has got a social score!')
     embed.set_image(url=meme)
     embed.set_author(name=f'{ctx.author.name}', icon_url=ctx.author.avatar_url)
     await ctx.send(embed=embed)
