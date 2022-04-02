@@ -15,7 +15,7 @@ async def on_ready():
     await bot.change_presence(
         activity=discord.Activity(
             type=discord.ActivityType.watching,
-            name=f'All of your Social Score'),
+            name='Social Score'),
         status=discord.Status.idle)
 
 
